@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  backend:
+    build: backend/
+    ports:
+      - "5000:5000"
+    links:
+      - redis
+  redis:
+    build: redis/
+    ports:
+      - "6300:6379"
+  frontend:
+    build: frontend/
+    ports:
+      - "8000:8000"
+    links:
+      - backend
