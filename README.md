@@ -31,7 +31,8 @@ sudo docker-compose up --build
 
 Start selenoid:
 ```
-./selenoid/setup.sh
+cd selenoid
+./setup.sh
 ```
 Then, run the tests:
 ```
