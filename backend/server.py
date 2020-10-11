@@ -35,7 +35,7 @@ def delete(key):
 def generate_key():
     keys = []
     for key in redis_client.scan_iter():
-        keys.append(key.decode('utf-8'))
+        keys.append(int(key.decode('utf-8')))
     keys.sort()
     return int(keys[-1])+1
 

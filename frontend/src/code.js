@@ -11,12 +11,10 @@ const addItem = (text) => {
 }
 
 const renderTodoList = (todoList) => {
-    document.querySelector("#todo-list").innerHTML = '';
-    let content = '';
-    todoList.items.forEach(item => {
-        content += `<li class='list-item'><span>${item.value}</span><button class='remove-button' onclick='removeKey("${item.key}")'>x</button></li>`;
-    });
-    document.querySelector("#todo-list").innerHTML = content;
+    console.log(todoList);
+    document.querySelector("#todo-list").innerHTML = todoList.items.map(
+        item => `<li class='list-item'><span>${item.value}</span><button class='remove-button' onclick='removeKey("${item.key}")'>x</button></li>`
+    ).join("");
 }
 
 const fetchTodoList = () => {
