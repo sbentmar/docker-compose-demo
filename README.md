@@ -14,8 +14,8 @@ Make sure your security group permits access to port 80.
 
 ```bash
 sudo yum update -y
-sudo amazon-linux-extras install docker git
-sudo yum install docker git -y
+sudo amazon-linux-extras install docker
+sudo yum install git -y
 sudo service docker start
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
