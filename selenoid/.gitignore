@@ -3,3 +3,4 @@ config/video
 target
 build
 *.iml
+.idea

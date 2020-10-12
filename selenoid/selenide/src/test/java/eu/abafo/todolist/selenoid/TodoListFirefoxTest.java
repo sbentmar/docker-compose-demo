@@ -1,4 +1,4 @@
-package eu.abafo.TodoListTests;
+package eu.abafo.todolist.selenoid;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
