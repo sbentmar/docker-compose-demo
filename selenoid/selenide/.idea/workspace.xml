@@ -39,9 +39,25 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.TodoListFirefoxTest.testAddNewItemInFirefox">
+  <component name="RunManager" selected="JUnit.TodoListFirefoxTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoListChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenidedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.abafo.todolist.selenoid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.abafo.todolist.selenoid" />
+      <option name="MAIN_CLASS_NAME" value="eu.abafo.todolist.selenoid.TodoListChromeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -60,6 +76,22 @@
       <option name="METHOD_NAME" value="testAddNewItemInChrome" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoListFirefoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenidedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.abafo.todolist.selenoid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.abafo.todolist.selenoid" />
+      <option name="MAIN_CLASS_NAME" value="eu.abafo.todolist.selenoid.TodoListFirefoxTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,9 +133,13 @@
     <list>
       <item itemvalue="JUnit.TodoListChromeTest.testAddNewItemInChrome" />
       <item itemvalue="JUnit.TodoListFirefoxTest.testAddNewItemInFirefox" />
+      <item itemvalue="JUnit.TodoListChromeTest" />
+      <item itemvalue="JUnit.TodoListFirefoxTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TodoListFirefoxTest" />
+        <item itemvalue="JUnit.TodoListChromeTest" />
         <item itemvalue="JUnit.TodoListFirefoxTest.testAddNewItemInFirefox" />
         <item itemvalue="JUnit.TodoListChromeTest.testAddNewItemInChrome" />
       </list>
