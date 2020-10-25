@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class TestBase {
-    protected final String BASE_URL = "http://34.243.217.217/";
+    protected final String BASE_URL = System.getenv("BASEURL");
 
     public void setUpBase() {
         Configuration.remote = "http://127.0.0.1:4444/wd/hub";
