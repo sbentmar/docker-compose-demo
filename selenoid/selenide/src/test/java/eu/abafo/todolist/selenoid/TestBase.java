@@ -13,12 +13,22 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class TestBase {
-    protected final String BASE_URL = System.getenv("BASEURL");
+    protected String BASE_URL;
 
     public void setUpBase() {
-        Configuration.remote = "http://127.0.0.1:4444/wd/hub";
-        Configuration.browserCapabilities.setCapability("enableVNC", true);
-        Configuration.browserCapabilities.setCapability("enableVideo", true);
+        if (System.getenv("BASEURL") == null) {
+            BASE_URL = "http://localhost:80/";
+        } else {
+            BASE_URL = System.getenv("BASEURL");
+        }
+        
+        if (!(System.getenv("DOCKER") == null)) {
+            Configuration.remote = "http://127.0.0.1:4444/wd/hub";
+            Configuration.browserCapabilities.setCapability("enableVNC", true);
+            Configuration.browserCapabilities.setCapability("enableVideo", true);
+
+        }
+
     }
 
     @AfterEach

@@ -13,7 +13,7 @@ public class TodoListChromeTest extends TestBase {
         setUpBase();
         Configuration.browserCapabilities.setCapability("browserName", "chrome");
         Configuration.browser = "chrome";
-        Configuration.browserCapabilities.setCapability("name", Configuration.browser+UUID.randomUUID().toString());
+        Configuration.browserCapabilities.setCapability("name", Configuration.browser + UUID.randomUUID().toString());
     }
 
     @Test
