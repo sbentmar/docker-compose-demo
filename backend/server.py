@@ -37,7 +37,7 @@ def generate_key():
     for key in redis_client.scan_iter():
         keys.append(int(key.decode('utf-8')))
     keys.sort()
-    return int(keys[-1])+1
+    return int(keys[-1])+1 if len(keys) > 0 else 0
 
 
 @app.route('/todo/<key>', methods=['POST'])
